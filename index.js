@@ -142,4 +142,14 @@ menuList.focus();
 screen.append(mainBox);
 screen.render();
 
-console.log('DevBot TUI started. Press q to quit.');
+// Start the application
+process.on('uncaughtException', (err) => {
+  screen.destroy();
+  console.error('An error occurred:', err.message);
+  process.exit(1);
+});
+
+process.on('SIGINT', () => {
+  screen.destroy();
+  process.exit(0);
+});
