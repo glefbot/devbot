@@ -1,0 +1,16 @@
+{
+  "name": "devbot-tui",
+  "version": "1.0.0",
+  "description": "A Terminal User Interface application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81"
+  },
+  "keywords": ["tui", "terminal", "interface"],
+  "author": "",
+  "license": "MIT"
+}
